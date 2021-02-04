@@ -46,3 +46,207 @@
 .ex-5-square:active {
   transform: scale(0.5);
 }
+
+/* Esercizio 6 */
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+
+/* Esercizio 7 */
+.ex-7-img {
+  transition: filter 2s ease;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(100%) sepia(50%);
+}
+
+/* Esercizio 8 */
+.ex-8-img {
+  transition: all 2s ease;
+}
+
+.ex-8-img:hover {
+  filter: grayscale(60%) sepia(50%);
+  border-radius: 20px;
+}
+
+/* Esercizio 9 */
+.ex-9-img {
+  transition: all 2s ease;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(60%) sepia(50%);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+.ex-10-icon {
+  animation-name: rotate-left;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-left {
+ 0% {
+   transform: rotate(0deg);
+ }
+
+ 100% {
+   transform: rotate(360deg);
+ }
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+ 0% {
+   transform: rotate(0deg);
+ }
+
+90% {
+  transform: rotate(270deg);
+}
+
+100% {
+  transform: rotate(0deg);
+}
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: move-right;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes move-right {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  50% {
+    top: -10px;
+    left: calc(100% - 60px);
+  }
+
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: move-left;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes move-left {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
+
+  50% {
+    bottom: -10px;
+    right: calc(100% - 60px);
+  }
+
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
+}
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+  animation-name: circle-right;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes circle-right {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  30% {
+    top: -10px;
+    left: calc(100% - 30px);
+  }
+
+  45% {
+    top: 60px;
+    left: calc(100% - 30px);
+  }
+
+  75% {
+    top: 60px;
+    left: -30px;
+  }
+
+  90% {
+    top: -10px;
+    left: -30px;
+  }
+
+  100% {
+    top: -10px;
+    left: 10%;
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation-name: circle-left;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes circle-left {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
+
+  30% {
+    bottom: -10px;
+    right: calc(100% - 30px);
+  }
+
+  45% {
+    bottom: 60px;
+    right: calc(100% - 30px);
+  }
+
+  75% {
+    bottom: 60px;
+    right: -30px;
+  }
+
+  90% {
+    bottom: -10px;
+    right: -30px;
+  }
+
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
+}
